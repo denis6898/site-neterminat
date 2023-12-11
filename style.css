@@ -277,10 +277,9 @@ footer a {
 body.dark-theme {
     background: linear-gradient(to bottom, #2a1a4a, #1a1a2a); /* Gradient vaporwave pentru modul dark */
     color: #fff;
-    transition: background-color 0.3s ease; /* Adăugăm tranziție pentru efectul de schimbare lină */
 }
 
-.dark-mode,
-.light-mode {
-    display: none; /* Ascundem butoanele pentru modul dark și light */
+body.light-theme {
+    background: linear-gradient(to bottom, #eaf2ff, #d9e6ff); /* Gradient vaporwave pentru modul light */
+    color: #333;
 }
