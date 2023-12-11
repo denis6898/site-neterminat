@@ -7,9 +7,9 @@ function checkTheme() {
     }
 
     const servicesSection = document.querySelector('.services-section');
-    if (document.body.classList.contains('dark-theme')) {
+    if (document.body.classList.contains('dark-theme') && servicesSection) {
         servicesSection.classList.add('dark-theme');
-    } else {
+    } else if (servicesSection) {
         servicesSection.classList.remove('dark-theme');
     }
 }
@@ -26,14 +26,6 @@ function deactivateDarkMode() {
     checkTheme();
 }
 
-function toggleTheme() {
-    if (document.body.classList.contains('dark-theme')) {
-        deactivateDarkMode();
-    } else {
-        activateDarkMode();
-    }
-}
-
 function showServiceInfo(infoId) {
     const allInfos = document.querySelectorAll('.service-info');
     allInfos.forEach(info => info.classList.remove('active'));
@@ -48,11 +40,8 @@ function redirectToSite(url) {
 
 document.addEventListener('DOMContentLoaded', checkTheme);
 
-const themeButtons = document.createElement('div');
-themeButtons.classList.add('theme-buttons');
-themeButtons.innerHTML = `
-    <button class="dark-mode" onclick="toggleTheme()">Dark Mode</button>
-    <button class="light-mode" onclick="toggleTheme()">Light Mode</button>
-`;
-
-document.body.appendChild(themeButtons);
+// Eliminarea butoanelor de schimbare temă
+const themeButtons = document.querySelector('.theme-buttons');
+if (themeButtons) {
+    themeButtons.innerHTML = '';
+}
