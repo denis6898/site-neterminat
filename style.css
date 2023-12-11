@@ -165,11 +165,6 @@ footer a {
     color: #fff;
 }
 
-.light-theme {
-    background-color: #f5f5f5;
-    color: #333;
-}
-
 .about-section h3,
 .about-section ul {
     color: #000;
@@ -279,7 +274,3 @@ body.dark-theme {
     color: #fff;
 }
 
-body.light-theme {
-    background: linear-gradient(to bottom, #eaf2ff, #d9e6ff); /* Gradient vaporwave pentru modul light */
-    color: #333;
-}
