@@ -10,7 +10,6 @@
     <script src="script.js" defer></script>
     <title>About Us</title>
     <style>
-        /* Adaugă aceste stiluri în head-ul fișierului, în secțiunea <style> */
         .about-section {
             max-width: 800px;
             margin: 20px auto;
@@ -57,13 +56,17 @@
         <div class="banner">
             <img src="logo.gif" alt="SipyScript Logo">
         </div>
-        <nav>
+        <div class="menu-btn-container" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
-        
         </nav>
     </header>
 
