@@ -16,7 +16,12 @@
         <div class="banner">
             <img src="logo.gif" alt="SipyScript Logo">
         </div>
-        <nav>
+        <div class="menu-btn-container" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
@@ -24,20 +29,17 @@
             </ul>
         </nav>
     </header>
-    
     <section class="main-section">
         <h2>Welcome to SipyScript</h2>
         <p>
             Welcome to SipyScript, your professional web development partner.
         </p>
-
         <h3>Our Affordable Services</h3>
         <div class="services-container">
             <button class="service-btn" onclick="showServiceInfo('starter-info')">Starter Pack</button>
             <button class="service-btn" onclick="showServiceInfo('professional-info')">Professional Pack</button>
             <button class="service-btn" onclick="showServiceInfo('premium-info')">Premium Pack</button>
         </div>
-
         <div class="services-info">
             <div class="service-info" id="starter-info">
                 <h3>Starter Pack</h3>
@@ -63,7 +65,6 @@
             <div class="service-info" id="professional-info">
                 <h3>Professional Pack</h3>
                 <p>
-
                     Number of Pages: 5<br>
                     Revisions: 2<br>
                     Features:
@@ -78,7 +79,6 @@
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
-    
                     </ul>
                     Support: 60 days post-launch support
                     <ul><a href="contact.html" class="request-offer-btn">REQUEST OFFER!!!</a></ul>
@@ -87,7 +87,6 @@
             <div class="service-info" id="premium-info">
                 <h3>Premium Pack</h3>
                 <p>
-                 
                     Number of Pages: 10<br>
                     Revisions: 4<br>
                     Features:
@@ -103,12 +102,10 @@
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
-
                     </ul>
                     Support: 90 days post-launch support
                     <ul><a href="contact.html" class="request-offer-btn">REQUEST OFFER!!!</a></ul>
                 </p>
-                
             </div>
         </div>
     </section>
