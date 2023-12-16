@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous">
     <script src="script.js" defer></script>
     <title>Contact Us</title>
     <style>
-        /* Adaugă aceste stiluri în head-ul fișierului, în secțiunea <style> */
         .contact-email-link {
-            color: #e74c3c; /* Schimbă această culoare la ce preferi */
+            color: #e74c3c;
         }
     </style>
 </head>
@@ -22,20 +22,23 @@
         <div class="banner">
             <img src="logo.gif" alt="SipyScript Logo">
         </div>
-        <nav>
+        <div class="menu-btn-container" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
-    
+        </nav>
     </header>
+
     <section>
         <h2>Contact Us</h2>
-       
-
-        <!-- Formular de contact -->
-        <form action="#" method="post" id="contact-form">
+        <form method="post" action="contactform.php" id="contact-form">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -45,13 +48,14 @@
             <label for="message">Your Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <input type="submit" value="Send Message">
+            <input type="submit" name="submit" value="Send Message">
         </form>
     </section>
 
     <section>
         <h2>Contact Information</h2>
-        <p>For urgent matters, you can also email us at <a class="contact-email-link" href="mailto:sipyscript@gmail.com">sipyscript@gmail.com</a>.</p>
+        <p>For urgent matters, you can also email us at <a class="contact-email-link"
+                href="mailto:sipyscript@gmail.com">sipyscript@gmail.com</a>.</p>
     </section>
 
     <footer>
